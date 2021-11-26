@@ -27,7 +27,7 @@ form.addEventListener('submit', (e: Event) => {
   let doc: HasFormatter;
   if (type.value === 'invoice') {
     doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
-  } else {
+  } else { //(type.value === 'payment')
     doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
   }
   console.log(doc);

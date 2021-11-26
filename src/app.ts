@@ -29,9 +29,9 @@ form.addEventListener('submit', (e: Event) => {
   e.preventDefault();
 
   console.log(
-    type.value, 
-    tofrom.value, 
-    details.value, 
+    type.value,
+    tofrom.value,
+    details.value,
     amount.valueAsNumber
   );
 });

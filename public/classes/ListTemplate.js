@@ -1,4 +1,5 @@
 export class ListTemplate {
+    // html unordered list element
     constructor(container) {
         this.container = container;
     }

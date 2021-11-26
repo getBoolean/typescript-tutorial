@@ -1,0 +1,4 @@
+{
+    "babel": true,
+    "jsdom": {"file": "public/index.html"}
+}

@@ -1,5 +1,5 @@
 const anchor = document.querySelector('a')!;
-if(anchor) {
+if (anchor) {
   console.log(anchor.href);
 }
 console.log(anchor.href);
@@ -18,9 +18,9 @@ form.addEventListener('submit', (e: Event) => {
   e.preventDefault();
 
   console.log(
-    type.value, 
-    tofrom.value, 
-    details.value, 
+    type.value,
+    tofrom.value,
+    details.value,
     amount.valueAsNumber
   );
 });

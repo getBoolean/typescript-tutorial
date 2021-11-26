@@ -7,12 +7,14 @@ var Invoice = /** @class */ (function () {
         this.amount = a;
     }
     Invoice.prototype.format = function () {
-        return this.client + " owes \u00A3" + this.amount + " for " + this.details;
+        return "".concat(this.client, " owes \u00A3").concat(this.amount, " for ").concat(this.details);
     };
     return Invoice;
 }());
 var invOne = new Invoice('mario', 'work on the mario website', 250);
 var invTwo = new Invoice('luigi', 'work on the luigi website', 300);
+console.log(invOne);
+console.log(invTwo);
 var invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);

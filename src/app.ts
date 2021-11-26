@@ -10,7 +10,7 @@ export interface IsPerson {
 
 const me: IsPerson = {
   name: 'shaun',
-  //age: 30,
+  // age: 30, // optional
   speak(text: string): void {
     console.log(text);
   },
@@ -43,9 +43,9 @@ form.addEventListener('submit', (e: Event) => {
   e.preventDefault();
 
   console.log(
-    type.value, 
-    tofrom.value, 
-    details.value, 
+    type.value,
+    tofrom.value,
+    details.value,
     amount.valueAsNumber
   );
 });

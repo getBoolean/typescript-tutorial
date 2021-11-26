@@ -5,8 +5,11 @@ class Invoice {
   // public amount: number;
 
   constructor(
-    readonly client: string, 
-    private details: string, 
+    // can never be changed but visible outside & inside class
+    readonly client: string,
+    // can only read and change inside class
+    private details: string,
+    // can be changed and read anywhere
     public amount: number,
   ){}
 

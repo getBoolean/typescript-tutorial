@@ -4,13 +4,19 @@ var Invoice = /** @class */ (function () {
     // readonly client: string;
     // private details: string;
     // public amount: number;
-    function Invoice(client, details, amount) {
+    function Invoice(
+    // can never be changed but visible outside & inside class
+    client, 
+    // can only read and change inside class
+    details, 
+    // can be changed and read anywhere
+    amount) {
         this.client = client;
         this.details = details;
         this.amount = amount;
     }
     Invoice.prototype.format = function () {
-        return this.client + " owes \u00A3" + this.amount + " for " + this.details;
+        return "".concat(this.client, " owes \u00A3").concat(this.amount, " for ").concat(this.details);
     };
     return Invoice;
 }());
